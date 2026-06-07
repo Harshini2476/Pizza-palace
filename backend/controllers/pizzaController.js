@@ -1,6 +1,5 @@
 import Pizza from "../models/Pizza.js";
 
-// Get All Pizzas
 export const getPizzas = async (req, res) => {
   try {
     const pizzas = await Pizza.find();
@@ -13,7 +12,6 @@ export const getPizzas = async (req, res) => {
   }
 };
 
-// Get Pizza By Id
 export const getPizzaById = async (req, res) => {
   try {
     const pizza = await Pizza.findById(req.params.id);
@@ -32,7 +30,6 @@ export const getPizzaById = async (req, res) => {
   }
 };
 
-// Add Pizza (Admin)
 export const addPizza = async (req, res) => {
   try {
     const pizza = await Pizza.create(req.body);
@@ -45,7 +42,6 @@ export const addPizza = async (req, res) => {
   }
 };
 
-// Update Pizza
 export const updatePizza = async (req, res) => {
   try {
     const pizza = await Pizza.findByIdAndUpdate(
@@ -70,7 +66,6 @@ export const updatePizza = async (req, res) => {
   }
 };
 
-// Delete Pizza
 export const deletePizza = async (req, res) => {
   try {
     const pizza = await Pizza.findById(req.params.id);

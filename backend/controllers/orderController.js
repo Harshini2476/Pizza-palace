@@ -1,6 +1,5 @@
 import Order from "../models/Order.js";
 
-// Create Order
 export const createOrder = async (req, res) => {
   try {
     const {
@@ -25,7 +24,6 @@ export const createOrder = async (req, res) => {
   }
 };
 
-// Get User Orders
 export const getMyOrders = async (req, res) => {
   try {
     const orders = await Order.find({
@@ -42,7 +40,6 @@ export const getMyOrders = async (req, res) => {
   }
 };
 
-// Get All Orders (Admin)
 export const getAllOrders = async (req, res) => {
   try {
     const orders = await Order.find()
@@ -58,7 +55,6 @@ export const getAllOrders = async (req, res) => {
   }
 };
 
-// Update Order Status
 export const updateOrderStatus = async (
   req,
   res

@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-/* ---------------- Order Item Schema ---------------- */
 const orderItemSchema = new mongoose.Schema(
   {
     pizza: {
@@ -31,7 +30,6 @@ const orderItemSchema = new mongoose.Schema(
   }
 );
 
-/* ---------------- Order Schema ---------------- */
 const orderSchema = new mongoose.Schema(
   {
     user: {
@@ -72,7 +70,6 @@ const orderSchema = new mongoose.Schema(
   }
 );
 
-/* ---------------- FIX: Prevent OverwriteModelError ---------------- */
 const Order =
   mongoose.models.Order || mongoose.model("Order", orderSchema);
 
