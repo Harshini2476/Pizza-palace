@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-/* Global Styles */
 
 * {
   margin: 0;
@@ -39,8 +38,6 @@ img {
   display: block;
 }
 
-/* Custom Scrollbar */
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -57,8 +54,6 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: #e85d04;
 }
-
-/* Reusable Classes */
 
 .container {
   width: 90%;
@@ -108,13 +103,9 @@ img {
   color: white;
 }
 
-/* Hero Section */
-
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
-
-/* Card Hover Effects */
 
 .card-hover {
   transition: transform 0.3s ease;
@@ -123,8 +114,6 @@ img {
 .card-hover:hover {
   transform: translateY(-8px);
 }
-
-/* Loader */
 
 .loader {
   border: 5px solid #f3f3f3;
